@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zubr13.adress.views.RootLayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Файл">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleNew" text="Новый">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="DIGIT1" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Открыть">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="DIGIT2" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Сохранить">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="DIGIT3" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#handleSaveAs" text="Сохранить как">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="DIGIT4" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Выйти">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="DIGIT5" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Статистика">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleShowBirthdayStatistics" text="Показать статистику">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="DIGIT1" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" onAction="#handleAbout" text="Помощь">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="Информация" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
